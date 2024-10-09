@@ -1,0 +1,3 @@
+D:/CLionProjects/DBUS/cmake-build-debug/CMakeFiles/DBUS.elf.dir
+D:/CLionProjects/DBUS/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/CLionProjects/DBUS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
