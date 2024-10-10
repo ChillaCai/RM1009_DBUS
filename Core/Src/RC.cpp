@@ -71,20 +71,20 @@ void RC::ParseDBUSData() {
   this->mouse_press_.r = (PressState_e)r_press_raw;
   // key_
   uint16_t key_raw = (((int16_t)rx_data_[15] << 8) | ((int16_t)rx_data_[14]));
-  if ((KEY_PRESSED_OFFSET_W & key_raw) == KEY_PRESSED_OFFSET_W) key_press_.w = PRESS;
+  if (KEY_PRESSED_OFFSET_W & key_raw) key_press_.w = PRESS;
   else key_press_.w = RELEASE;
-  if ((KEY_PRESSED_OFFSET_S & key_raw) == KEY_PRESSED_OFFSET_S) key_press_.s = PRESS;
+  if (KEY_PRESSED_OFFSET_S & key_raw) key_press_.s = PRESS;
   else key_press_.s = RELEASE;
-  if ((KEY_PRESSED_OFFSET_A & key_raw) == KEY_PRESSED_OFFSET_A) key_press_.a = PRESS;
+  if (KEY_PRESSED_OFFSET_A & key_raw) key_press_.a = PRESS;
   else key_press_.a = RELEASE;
-  if ((KEY_PRESSED_OFFSET_D & key_raw) == KEY_PRESSED_OFFSET_D) key_press_.d = PRESS;
+  if (KEY_PRESSED_OFFSET_D & key_raw) key_press_.d = PRESS;
   else key_press_.d = RELEASE;
-  if ((KEY_PRESSED_OFFSET_Q & key_raw) == KEY_PRESSED_OFFSET_Q) key_press_.q = PRESS;
+  if (KEY_PRESSED_OFFSET_Q & key_raw) key_press_.q = PRESS;
   else key_press_.q = RELEASE;
-  if ((KEY_PRESSED_OFFSET_E & key_raw) == KEY_PRESSED_OFFSET_E) key_press_.e = PRESS;
+  if (KEY_PRESSED_OFFSET_E & key_raw) key_press_.e = PRESS;
   else key_press_.e = RELEASE;
-  if ((KEY_PRESSED_OFFSET_SHIFT & key_raw) == KEY_PRESSED_OFFSET_SHIFT) key_press_.shift = PRESS;
+  if (KEY_PRESSED_OFFSET_SHIFT & key_raw) key_press_.shift = PRESS;
   else key_press_.shift = RELEASE;
-  if ((KEY_PRESSED_OFFSET_CTRL & key_raw) == KEY_PRESSED_OFFSET_CTRL) key_press_.ctrl = PRESS;
+  if (KEY_PRESSED_OFFSET_CTRL & key_raw) key_press_.ctrl = PRESS;
   else key_press_.ctrl = RELEASE;
 }
